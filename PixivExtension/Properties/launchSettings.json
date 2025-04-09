@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "PixivExtension (Package)": {
+      "commandName": "MsixPackage",
+      "doNotLaunchApp": true
+    },
+    "PixivExtension (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
