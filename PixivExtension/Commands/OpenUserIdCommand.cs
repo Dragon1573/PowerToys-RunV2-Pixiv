@@ -11,7 +11,7 @@ public sealed partial class OpenUserIdCommand : InvokableCommand {
 
     public OpenUserIdCommand(string user) {
         _user = user;
-        Name = $"打开用户主页：{user}";
+        Name = $"打开";
         Icon = IconHelpers.FromRelativePath("Assets/Pixiv_Logo.png");
     }
 

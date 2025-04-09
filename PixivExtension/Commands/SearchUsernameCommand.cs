@@ -13,7 +13,7 @@ public partial class SearchUsernameCommand : InvokableCommand {
     public SearchUsernameCommand(string nickname) {
         _nickname = nickname;
         Icon = IconHelpers.FromRelativePath("Assets\\Pixiv_Logo.png");
-        Name = $"搜索用户名：{_nickname}";
+        Name = $"打开";
     }
 
     public override ICommandResult Invoke() {

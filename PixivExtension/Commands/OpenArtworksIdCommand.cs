@@ -12,7 +12,7 @@ public sealed partial class OpenArtworksIdCommand : InvokableCommand {
 
     public OpenArtworksIdCommand(string artwork) {
         _artwork = artwork;
-        Name = $"打开插画编号：{artwork}";
+        Name = $"打开";
         Icon = IconHelpers.FromRelativePath("Assets/Pixiv_Logo.png");
     }
 

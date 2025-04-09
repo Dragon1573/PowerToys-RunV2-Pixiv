@@ -1,4 +1,4 @@
-// Copyright (c) Microsoft Corporation
+﻿// Copyright (c) Microsoft Corporation
 // The Microsoft Corporation licenses this file to you under the MIT license.
 // See the LICENSE file in the project root for more information.
 
@@ -15,7 +15,7 @@ public partial class PixivExtensionCommandsProvider : CommandProvider {
             new CommandItem(new PixivExtensionPage()) {
                 Title = "Pixiv",
                 Icon = IconHelpers.FromRelativePath("Assets\\Pixiv_Logo.png"),
-                Subtitle = "ȫ��֪���Ķ���Ԫ�廭ƽ̨",
+                Subtitle = "全球知名的二次元插画平台",
             },
         ];
     }
