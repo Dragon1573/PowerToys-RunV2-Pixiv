@@ -11,6 +11,7 @@ public partial class PixivExtensionCommandsProvider : CommandProvider {
     private readonly ICommandItem[] _commands;
 
     public PixivExtensionCommandsProvider() {
+        DisplayName = "Pixiv for Command Palette";
         _commands = [
             new CommandItem(new PixivExtensionPage()) {
                 Title = "Pixiv",

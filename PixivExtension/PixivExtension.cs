@@ -9,22 +9,18 @@ using Microsoft.CommandPalette.Extensions;
 
 namespace PixivExtension;
 
-[Guid("f8261a25-8833-4335-adfe-26f6ac878fc7")]
-public sealed partial class PixivExtension : IExtension, IDisposable
-{
+[Guid("d5fd857a-077d-4d33-8f57-2dcd09f19722")]
+public sealed partial class PixivExtension : IExtension, IDisposable {
     private readonly ManualResetEvent _extensionDisposedEvent;
 
     private readonly PixivExtensionCommandsProvider _provider = new();
 
-    public PixivExtension(ManualResetEvent extensionDisposedEvent)
-    {
+    public PixivExtension(ManualResetEvent extensionDisposedEvent) {
         this._extensionDisposedEvent = extensionDisposedEvent;
     }
 
-    public object? GetProvider(ProviderType providerType)
-    {
-        return providerType switch
-        {
+    public object? GetProvider(ProviderType providerType) {
+        return providerType switch {
             ProviderType.Commands => _provider,
             _ => null,
         };
